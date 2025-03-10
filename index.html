@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>uz影视 资源添加</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+
+    <body>
+        <!-- 导航栏 -->
+        <div class="navbar">
+            <div class="logo">uz影视拓展商店</div>
+            <div class="nav-menu">
+                <a href="#" class="nav-item active"><i class="fas fa-home"></i> 首页</a>
+                <a href="#" class="nav-item"><i class="fas fa-book"></i> 教程</a>
+            </div>
+            <div class="nav-icons">
+                <a href="#" class="nav-icon"><i class="fas fa-search"></i></a>
+            </div>
+        </div>
+
+        <!-- 主要内容 -->
+        <div class="main-content">
+            <!-- 分类选项卡 -->
+            <div class="category-tabs" id="categoryTabs">
+                <button class="category-tab active" data-category="all">全部</button>
+                <!-- 分类标签会通过JS动态生成 -->
+            </div>
+
+            <div class="page-description" style="margin-top: 20px; margin-bottom: 10px; color: #ffc107; font-weight: bold">以下资源收录自网络，请自行甄别。</div>
+            <div id="resourcesContainer"></div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
