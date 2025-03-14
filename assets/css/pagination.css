@@ -1,0 +1,39 @@
+/* 分页样式 */
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-regular);
+}
+
+.pagination button {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-background-card);
+    border: 1px solid var(--color-border-dark);
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    transition: var(--transition-default);
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-small);
+}
+
+.pagination button:hover {
+    background-color: var(--color-background-tab);
+    border-color: var(--border-hover);
+}
+
+.pagination input {
+    width: 40px;
+    height: 28px;
+    padding: 4px;
+    text-align: center;
+    border: 1px solid var(--color-border-dark);
+    border-radius: var(--border-radius-sm);
+    font-size: var(--font-size-regular);
+    box-sizing: border-box;
+}

@@ -1,0 +1,90 @@
+/* themes.css - 主题定义 */
+
+/* 默认主题 (亮色) */
+:root {
+    /* 继承variables.css中的默认变量 */
+    
+    /* 标签背景和边框 */
+    --tag-direct-bg: #e6f7ff;
+    --tag-direct-border: #91d5ff;
+    --tag-proxy-bg: #fff7e6;
+    --tag-proxy-border: #ffd591;
+    
+    /* 按钮hover状态 */
+    --btn-copy-hover: #218838;
+    --btn-help-hover: #e0a800;
+    --btn-special: #6c757d;
+    --btn-special-hover: #5a6268;
+    
+    /* 边框颜色 */
+    --border-hover: #bbb;
+}
+
+/* 暗色主题 */
+[data-theme="dark"] {
+    /* 颜色变量覆盖 */
+    --color-primary: #3391ff;
+    --color-primary-hover: #4dabff;
+    --color-text-primary: #f0f0f0;
+    --color-text-secondary: #bbb;
+    --color-background-main: #121212;
+    --color-background-card: #1e1e1e;
+    --color-background-tab: #2c2c2c;
+    --color-background-tab-hover: #3a3a3a;
+    --color-border: #333;
+    --color-border-dark: #444;
+    --color-shadow: rgba(0, 0, 0, 0.5);
+    --color-notice: #ffd54f;
+    --color-error: #f8d7da;
+    --color-error-bg: #721c24;
+    
+    /* 标签背景和边框 - 暗色主题 */
+    --tag-direct-bg: #0c2b41;
+    --tag-direct-border: #0e5394;
+    --tag-proxy-bg: #3a2a00;
+    --tag-proxy-border: #8b6d00;
+    
+    /* 按钮hover状态 - 暗色主题 */
+    --btn-copy-hover: #1a6e2d;
+    --btn-help-hover: #9c7400;
+    --btn-special: #495057;
+    --btn-special-hover: #343a40;
+    
+    /* 边框颜色 - 暗色主题 */
+    --border-hover: #555;
+}
+
+/* 主题切换按钮样式 */
+.theme-toggle {
+    cursor: pointer;
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-medium);
+    transition: var(--transition-default);
+    margin-left: var(--spacing-md);
+}
+
+.theme-toggle:hover {
+    color: var(--color-primary);
+}
+
+/* 主题切换动画 */
+body {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* 主题切换图标 */
+.theme-toggle .fa-sun {
+    display: none;
+}
+
+.theme-toggle .fa-moon {
+    display: inline-block;
+}
+
+[data-theme="dark"] .theme-toggle .fa-sun {
+    display: inline-block;
+}
+
+[data-theme="dark"] .theme-toggle .fa-moon {
+    display: none;
+} 

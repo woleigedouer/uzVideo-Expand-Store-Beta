@@ -1,0 +1,46 @@
+/* 搜索框样式 */
+.search-container {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1001;
+}
+
+.search-container.active {
+    display: block;
+}
+
+.search-container input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+    font-size: 14px;
+}
+
+.search-container button {
+    margin-left: 5px;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .search-container {
+        right: 10px;
+        width: calc(100% - 60px);
+    }
+    
+    .search-container input {
+        width: calc(100% - 80px);
+    }
+} 

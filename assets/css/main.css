@@ -1,1 +1,15 @@
+/* main.css - 主样式文件 */
+@import 'variables.css';
+@import 'themes.css';
+@import 'base.css';
+@import 'navbar.css';
+@import 'resources.css';
+@import 'pagination.css';
+@import 'search.css';
 
+/* 响应式设计 - 通用部分 */
+@media (max-width: 768px) {
+    .main-content {
+        padding: var(--spacing-md);
+    }
+}

@@ -1,0 +1,113 @@
+/* 导航栏样式 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background-color: var(--color-background-card);
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 0;
+    z-index: var(--z-index-navbar);
+}
+
+.logo {
+    font-size: var(--font-size-large);
+    font-weight: bold;
+    color: var(--color-text-primary);
+    flex: 1;
+}
+
+.nav-menu {
+    display: flex;
+    gap: var(--spacing-lg);
+    justify-content: center;
+    flex: 1;
+}
+
+.nav-menu::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, Opera */
+}
+
+.nav-item {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-regular);
+    padding: var(--spacing-xs) 0;
+    transition: var(--transition-default);
+    position: relative;
+}
+
+.nav-item:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-primary);
+    transition: width var(--transition-speed) ease;
+}
+
+.nav-item:hover, .nav-item.active {
+    color: var(--color-primary);
+}
+
+.nav-item:hover:after {
+    width: 100%;
+}
+
+.nav-icons {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.nav-icon {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-medium);
+    transition: var(--transition-default);
+}
+
+.nav-icon:hover {
+    color: var(--color-primary);
+}
+
+/* 分类选项卡样式 */
+.category-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.category-tab {
+    padding: 6px var(--spacing-md);
+    background-color: var(--color-background-tab);
+    border: none;
+    border-radius: var(--border-radius-lg);
+    cursor: pointer;
+    font-size: var(--font-size-small);
+    transition: var(--transition-default);
+}
+
+.category-tab:hover {
+    background-color: var(--color-background-tab-hover);
+}
+
+.category-tab.active {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+}
+
+/* 响应式导航栏设计 */
+@media (max-width: 768px) {
+    .navbar {
+        padding: var(--spacing-sm);
+    }
+    
+    .nav-menu {
+        gap: var(--spacing-md);
+    }
+}

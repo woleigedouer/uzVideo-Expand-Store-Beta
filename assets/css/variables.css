@@ -1,0 +1,55 @@
+/* variables.css - CSS变量定义 */
+
+:root {
+    /* 颜色变量 */
+    --color-primary: #007bff;
+    --color-primary-hover: #0056b3;
+    --color-text-primary: #333;
+    --color-text-secondary: #666;
+    --color-text-light: #fff;
+    --color-background-main: #f5f5f5;
+    --color-background-card: #fff;
+    --color-background-tab: #f0f0f0;
+    --color-background-tab-hover: #e0e0e0;
+    --color-border: #eee;
+    --color-border-dark: #ddd;
+    --color-shadow: rgba(0, 0, 0, 0.1);
+    --color-notice: #ffc107;
+    --color-error: #721c24;
+    --color-error-bg: #f8d7da;
+    --color-tag-direct: #28a745;
+    --color-tag-proxy: #dc3545;
+    
+    /* 字体变量 */
+    --font-family-main: 'Microsoft YaHei', Arial, sans-serif;
+    --font-size-small: 13px;
+    --font-size-regular: 14px;
+    --font-size-medium: 16px;
+    --font-size-large: 18px;
+    
+    /* 间距变量 */
+    --spacing-xs: 5px;
+    --spacing-sm: 10px;
+    --spacing-md: 15px;
+    --spacing-lg: 20px;
+    --spacing-xl: 25px;
+    
+    /* 边框变量 */
+    --border-radius-sm: 4px;
+    --border-radius-md: 5px;
+    --border-radius-lg: 18px;
+    
+    /* 阴影变量 */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+    /* 动画变量 */
+    --transition-speed: 0.3s;
+    --transition-default: all 0.3s ease;
+    
+    /* 布局变量 */
+    --navbar-height: 60px;
+    --container-max-width: 1200px;
+    --z-index-navbar: 1000;
+    --z-index-dropdown: 1001;
+} 

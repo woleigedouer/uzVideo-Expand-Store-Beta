@@ -1,0 +1,106 @@
+/* 基础样式 */
+body {
+    font-family: var(--font-family-main);
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background-main);
+    color: var(--color-text-primary);
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+/* 主要内容区域 */
+.main-content {
+    padding: var(--spacing-lg);
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* 页面描述 */
+.page-description {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-regular);
+    line-height: 1.6;
+}
+
+/* 旧样式保留，以后可删除 */
+.button-row {
+    display: none;
+}
+
+.btn, .copy-btn, .help-btn {
+    display: none;
+}
+
+.resource-description, .resource-category {
+    display: none;
+}
+
+/* 隐藏不匹配的资源 */
+.hidden {
+    display: none;
+}
+
+/* 加载中状态 */
+.loading {
+    text-align: center;
+    padding: var(--spacing-lg);
+    color: var(--color-text-secondary);
+}
+
+.loading:after {
+    content: "...";
+    animation: dots 1.5s steps(5, end) infinite;
+}
+
+@keyframes dots {
+    0%, 20% { content: "."; }
+    40% { content: ".."; }
+    60% { content: "..."; }
+    80%, 100% { content: ""; }
+}
+
+/* 错误状态 */
+.error-message {
+    padding: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+    background-color: var(--color-error-bg);
+    color: var(--color-error);
+    border-radius: var(--border-radius-sm);
+    text-align: center;
+}
+
+/* 无结果状态 */
+.no-results {
+    padding: var(--spacing-lg);
+    text-align: center;
+    background-color: var(--color-background-tab);
+    border-radius: var(--border-radius-sm);
+    margin: var(--spacing-lg) 0;
+    color: var(--color-text-secondary);
+}
+
+/* 资源提示样式 */
+.resource-notice {
+    color: var(--color-notice);
+    font-size: var(--font-size-regular);
+    line-height: 1.5;
+    margin: var(--spacing-md) 0;
+    font-weight: bold;
+}
+
+/* 页脚样式 */
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-md);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-sm);
+    background-color: var(--color-background-card);
+} 
